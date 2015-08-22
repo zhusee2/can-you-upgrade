@@ -23,7 +23,7 @@
   margin: auto;
 }
 .hero-title, .hero-subtitle {
-  text-shadow: 0 0 8px black;
+  text-shadow: 0 0 5px rgba(0,0,0,.75), 0 0 10px black;
 }
 .hero-title {
   $size: 80px;
@@ -42,21 +42,21 @@
 
 .hero-actions {
   font-size: 14px;
+  color: white;
   margin-top: relative(45px);
 }
 .btn-outline {
-  background: none;
-  border-color: white;
+  background-color: transparentize(black, .75);
+  border-color: inherit;
 
   &, &:hover, &:focus {
-    color: white;
+    color: inherit;
   }
   &:hover, &:focus {
     background-color: transparentize(white, .8);
   }
   &:active {
     background-color: transparentize(white, .9);
-    color: darken(white, 10%);
   }
 }
 
