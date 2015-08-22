@@ -61,6 +61,12 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 10']
 end
 
+# Deploy to Github Pages
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+end
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
@@ -70,7 +76,7 @@ configure :build do
   activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
