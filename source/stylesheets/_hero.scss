@@ -1,11 +1,22 @@
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 720px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  padding: relative(60px);
   display: flex;
+  position: relative;
+
   @include subpixel-rendering(off);
+
+  @include media-small {
+    font-size: relative(18px);
+  }
+  @include media-medium {
+    font-size: relative(24px);
+  }
 }
 .hero-inner {
   margin: auto;
@@ -15,20 +26,21 @@
 }
 .hero-title {
   $size: 80px;
-  font-size: relative($size);
+  font-size: relative($size, 24px);
   font-weight: 300;
   font-family: "Source Sans Pro", $default-font;
   margin: 0.2em 0;
 }
 .hero-subtitle {
   $size: 35px;
-  font-size: relative($size);
+  font-size: relative($size, 24px);
   font-weight: 200;
   font-family: zh-light, $default-font;
   margin: 0;
 }
 
 .hero-actions {
+  font-size: 14px;
   margin-top: relative(45px);
 }
 .btn-outline {
@@ -48,8 +60,8 @@
 }
 
 .hero-icon {
-  width: relative(256px);
-  height: relative(256px);
+  width: relative(256px, 24px);
+  height: relative(256px, 24px);
   background-color: white;
   border-radius: 50%;
   display: inline-flex;
