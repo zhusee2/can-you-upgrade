@@ -1,0 +1,22 @@
+.lead-section {
+  color: #666;
+  font-weight: 200;
+  font-family: zh-light, $default-font;
+  text-align: center;
+  padding: 60px 0;
+
+  .lead {
+    max-width: 26em;
+    margin: 0 auto 1.5em;
+  }
+  .fb-post {
+    &, span, iframe {
+      width: 100% !important;
+      max-width: 16px * 26;
+
+      @include media-small {
+        max-width: 21px * 26;
+      }
+    }
+  }
+}

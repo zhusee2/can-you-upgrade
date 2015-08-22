@@ -2,4 +2,12 @@
 
 @import "fonts";
 @import "mixins";
+
 @import "hero";
+@import "lead";
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
