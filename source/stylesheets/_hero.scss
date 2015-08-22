@@ -84,6 +84,21 @@
   );
 }
 
+.hero-attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  a {
+    background-color: black;
+    color: inherit;
+    font-size: 12px;
+    padding: 0.3em 1em;
+    display: inline-block;
+    opacity: .75;
+  }
+}
+
 .type-gaomei {
   background-image: image-url('gaomei.jpg');
   color: white;
