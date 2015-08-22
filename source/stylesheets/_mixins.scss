@@ -1,0 +1,14 @@
+@function relative($size, $base: 14px, $unit: 1em) {
+  @return ($size / $base) * $unit;
+}
+
+@mixin subpixel-rendering($switch: on) {
+  // From: http://maximilianhoffmann.com/article/better-font-rendering-on-osx/
+  @if $switch == on {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  } @else if $switch == off {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

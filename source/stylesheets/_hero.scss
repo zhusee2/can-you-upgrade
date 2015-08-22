@@ -1,0 +1,82 @@
+.hero-section {
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  @include subpixel-rendering(off);
+}
+.hero-inner {
+  margin: auto;
+}
+.hero-title, .hero-subtitle {
+  text-shadow: 0 0 8px black;
+}
+.hero-title {
+  $size: 80px;
+  font-size: relative($size);
+  font-weight: 300;
+  font-family: "Source Sans Pro", $default-font;
+  margin: 0.2em 0;
+}
+.hero-subtitle {
+  $size: 35px;
+  font-size: relative($size);
+  font-weight: 200;
+  font-family: zh-light, $default-font;
+  margin: 0;
+}
+
+.hero-actions {
+  margin-top: relative(45px);
+}
+.btn-outline {
+  background: none;
+  border-color: white;
+
+  &, &:hover, &:focus {
+    color: white;
+  }
+  &:hover, &:focus {
+    background-color: transparentize(white, .8);
+  }
+  &:active {
+    background-color: transparentize(white, .9);
+    color: darken(white, 10%);
+  }
+}
+
+.hero-icon {
+  width: relative(256px);
+  height: relative(256px);
+  background-color: white;
+  border-radius: 50%;
+  display: inline-flex;
+}
+.hero-icon:before {
+  content: '';
+  width: percentage(248/530);
+  height: percentage(328/530);
+  margin: auto;
+  display: block;
+  clip-path: polygon(
+    0 0, percentage(20/248) 0,
+    50% percentage(152/328),
+    percentage(228/248) 0, 100% 0,
+    percentage(134/248) 50%,
+    100% 100%, percentage(228/248) 100%,
+    50% percentage(178/328),
+    percentage(20/248) 100%, 0 100%,
+    percentage(116/248) 50%
+  );
+}
+
+.type-gaomei {
+  background-image: image-url('gaomei.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #f06795, #2c3093);
+  }
+}
