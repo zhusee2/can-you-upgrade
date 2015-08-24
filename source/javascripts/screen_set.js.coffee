@@ -1,4 +1,7 @@
 #= require ./data
+#= require ./screen
+
+{Screen} = window.AppData
 
 class ScreenSet
   constructor: ->
@@ -11,7 +14,7 @@ class ScreenSet
 
   pop: ->
     if screenData = @screensArray.pop()
-      return screenData
+      return Screen._createFromTemplate(screenData)
     else
       @initRandomArray()
       return @pop()
