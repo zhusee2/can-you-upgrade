@@ -1,3 +1,14 @@
+%button-on-light-bg {
+  background-color: transparentize(white, .3);
+
+  &:hover, &:focus {
+    background-color: transparentize(white, .15);
+  }
+  &:active {
+    background-color: transparentize(darken(white, 5%), .3);
+  }
+}
+
 .type-gaomei {
   background-image: image-url('gaomei.jpg');
   color: white;
@@ -18,13 +29,69 @@
     color: #415729;
   }
   .btn-outline {
-    background-color: transparentize(white, .3);
+    @extend %button-on-light-bg;
+  }
+}
 
-    &:hover, &:focus {
-      background-color: transparentize(white, .15);
-    }
-    &:active {
-      background-color: transparentize(darken(white, 5%), .3);
-    }
+.type-jiufen {
+  background-image: image-url('jiufen.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #e3c68c, #3e7669);
+  }
+}
+
+.type-thousand {
+  background-image: image-url('thousand.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #652815, #f2e57d);
+  }
+}
+
+.type-jade {
+  background-image: image-url('jade.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #738423, #a5cad3);
+  }
+}
+
+.type-snow {
+  background-image: image-url('snow.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #ffd6aa, #657fba);
+  }
+}
+
+.type-shimenshan {
+  background-image: image-url('shimenshan.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #e2a063, #3b4c92);
+  }
+}
+
+.type-hehuanshan {
+  background-image: image-url('hehuanshan.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #c8d178, #0281c4);
+  }
+}
+
+.type-turtle {
+  background-image: image-url('turtle.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #d1bfa9, #575a61);
   }
 }

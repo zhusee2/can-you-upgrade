@@ -41,7 +41,7 @@
   $size: 35px;
   font-size: relative($size, 24px);
   font-weight: 200;
-  font-family: zh-light, $default-font;
+  font-family: zh-font, $default-font;
   margin: 0;
 }
 
@@ -51,17 +51,19 @@
   margin-top: relative(45px);
 }
 .btn-outline {
-  background-color: transparentize(black, .75);
+  background-color: transparentize(black, .5);
+  font-weight: 600;
+  font-family: zh-font, $default-font;
   border-color: inherit;
 
   &, &:hover, &:focus {
     color: inherit;
   }
   &:hover, &:focus {
-    background-color: transparentize(white, .8);
+    background-color: transparentize(lighten(black, 20%), .5);
   }
   &:active {
-    background-color: transparentize(white, .9);
+    background-color: transparentize(black, .25);
   }
 }
 

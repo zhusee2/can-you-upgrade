@@ -17,7 +17,7 @@ class Screen
   updateContent: ->
     @node.addClass("type-#{@settings.type}")
 
-    @node.find('.hero-title').text(@settings.title)
+    @node.find('.hero-title').text('OS X ' + @settings.title)
     @node.find('.hero-subtitle').text(@settings.subtitle)
 
     @node.find('.hero-attribution > a').text(@settings.attr)
