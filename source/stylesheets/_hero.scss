@@ -72,24 +72,23 @@
   height: relative(256px, 24px);
   background-color: white;
   border-radius: 50%;
-  display: inline-flex;
+  display: inline-block;
+  position: relative;
 }
-.hero-icon:before {
+.hero-icon:before,
+.hero-icon:after {
   content: '';
   width: percentage(248/530);
   height: percentage(328/530);
   margin: auto;
   display: block;
-  clip-path: polygon(
-    0 0, percentage(20/248) 0,
-    50% percentage(152/328),
-    percentage(228/248) 0, 100% 0,
-    percentage(134/248) 50%,
-    100% 100%, percentage(228/248) 100%,
-    50% percentage(178/328),
-    percentage(20/248) 100%, 0 100%,
-    percentage(116/248) 50%
-  );
+  position: absolute;
+  top: percentage(101/530);
+  left: percentage(141/530);
+}
+.hero-icon:after {
+  background: image-url('x-mask.svg') no-repeat center center;
+  background-size: 101%;
 }
 
 .hero-attribution {
