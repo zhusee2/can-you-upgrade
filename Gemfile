@@ -16,5 +16,7 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 gem 'middleman-deploy', "~> 1.0"
 
 # Front-end helpers
+gem "bootstrap-sass", require: false
+gem "rails-assets-knuth-shuffle", source: "https://rails-assets.org"
 gem "middleman-autoprefixer"
 gem "middleman-google-analytics"
