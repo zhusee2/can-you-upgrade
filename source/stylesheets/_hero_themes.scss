@@ -1,0 +1,30 @@
+.type-gaomei {
+  background-image: image-url('gaomei.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #f06795, #2c3093);
+  }
+}
+
+.type-taroko {
+  background-image: image-url('taroko.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #bdcd5e, #415729);
+  }
+  .hero-actions {
+    color: #415729;
+  }
+  .btn-outline {
+    background-color: transparentize(white, .3);
+
+    &:hover, &:focus {
+      background-color: transparentize(white, .15);
+    }
+    &:active {
+      background-color: transparentize(darken(white, 5%), .3);
+    }
+  }
+}
