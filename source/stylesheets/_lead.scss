@@ -7,9 +7,11 @@
 
   .lead {
     max-width: 26em;
-    margin: 0 auto 1.5em;
+    margin: 0 auto;
   }
   .fb-post {
+    margin: 45px auto;
+
     &, span, iframe {
       width: 100% !important;
       max-width: 16px * 26;
