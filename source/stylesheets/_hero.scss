@@ -78,17 +78,22 @@
 .hero-icon:before,
 .hero-icon:after {
   content: '';
-  width: percentage(248/530);
-  height: percentage(328/530);
-  margin: auto;
   display: block;
   position: absolute;
+}
+.hero-icon:before {
+  width: percentage(248/530);
+  height: percentage(328/530);
   top: percentage(101/530);
   left: percentage(141/530);
 }
 .hero-icon:after {
+  width: 100%;
+  height: 100%;
   background: image-url('x-mask.svg') no-repeat center center;
-  background-size: 101%;
+  background-size: 100%;
+  top: 0;
+  left: 0;
 }
 
 .hero-attribution {
