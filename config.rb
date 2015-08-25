@@ -52,9 +52,9 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 # Setup Google Analytics
-# activate :google_analytics do |ga|
-#   ga.tracking_id = 'UA-xxxxxxx-3'
-# end
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-337161-19'
+end
 
 # Autoprefixer for automatic vendor-prefixes
 activate :autoprefixer do |config|

@@ -33,6 +33,8 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+    <%= google_analytics_universal_tag if build? %>
+
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <%= javascript_include_tag  "all" %>
   </body>
