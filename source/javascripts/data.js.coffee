@@ -10,7 +10,7 @@ window.AppData.screens = [
   {
     type: 'taroko'
     title: 'Taroko',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '令人讚嘆不已的驚奇。',
     attr: 'Photo by chialinshih, CC-BY-NC',
     link: 'http://flic.kr/p/9mKdan'
   },
@@ -18,7 +18,7 @@ window.AppData.screens = [
   {
     type: 'jiufen'
     title: 'Jiufen',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '蜿蜒曲折，卻盪氣迴腸。',
     attr: 'Photo by mi..chael, CC-BY-NC',
     link: 'http://flic.kr/p/dwGxwk'
   },
@@ -26,7 +26,7 @@ window.AppData.screens = [
   {
     type: 'thousand'
     title: 'Thousand Island',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '日常，原來這麼美好。',
     attr: 'Photo by chialinshih, CC-BY-NC',
     link: 'http://flic.kr/p/n2EdSY'
   },
@@ -34,7 +34,7 @@ window.AppData.screens = [
   {
     type: 'jade'
     title: 'Jade Mountain',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '再一次，登上最高。',
     attr: 'Photo by YU-WEN LIN, CC-BY-NC-ND',
     link: 'http://flic.kr/p/2VzBwV'
   },
@@ -42,7 +42,7 @@ window.AppData.screens = [
   {
     type: 'snow'
     title: 'Snow Mountain',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '登峰造極的顛峰之作。',
     attr: 'Photo by Devon Chang, CC-BY-NC-ND',
     link: 'http://flic.kr/p/9DakA5'
   },
@@ -50,7 +50,7 @@ window.AppData.screens = [
   {
     type: 'shimenshan'
     title: 'Shimenshan',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '焚膏繼晷的嘔心之作。',
     attr: 'Photo by Alonso Sun, CC-BY-NC-ND',
     link: 'http://flic.kr/p/dNm6P6'
   },
@@ -58,7 +58,7 @@ window.AppData.screens = [
   {
     type: 'hehuanshan'
     title: 'Hehuanshan',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '視野，從來沒有這麼開闊。',
     attr: 'Photo by gamemall104, CC-BY-SA',
     link: 'http://flic.kr/p/posKmE'
   },
@@ -66,7 +66,7 @@ window.AppData.screens = [
   {
     type: 'turtle'
     title: 'Turtle Island',
-    subtitle: '口誤，造就一場美好的誤會。',
+    subtitle: '帶著電腦在海上昂首闊步。',
     attr: 'Photo by Nomad Cavalier, Hark, CC-BY-NC',
     link: 'http://flic.kr/p/8zZf1b'
   }
