@@ -69,5 +69,13 @@ window.AppData.screens = [
     subtitle: '帶著電腦在海上昂首闊步。',
     attr: 'Photo by Nomad Cavalier, Hark, CC-BY-NC',
     link: 'http://flic.kr/p/8zZf1b'
+  },
+
+  {
+    type: 'erliao'
+    title: 'Erliao Mountain',
+    subtitle: '璀璨日出，另一段精彩的開始。',
+    attr: 'Photo by Vincent Sheed, CC-BY-NC-ND',
+    link: 'https://flic.kr/p/tVBP33'
   }
 ]
