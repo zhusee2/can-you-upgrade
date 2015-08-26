@@ -95,3 +95,12 @@
     background-image: linear-gradient(to bottom, #d1bfa9, #575a61);
   }
 }
+
+.type-erliao {
+  background-image: image-url('erliao.jpg');
+  color: white;
+
+  .hero-icon:before {
+    background-image: linear-gradient(to bottom, #6c943b, #c19660);
+  }
+}
